@@ -17,14 +17,16 @@
         v-model="password"
       >
 
-      <recaptcha
+      <turnstile
+        data-theme="light"
         @error="onError"
         @success="onSuccess"
         @expired="onExpired"
       />
 
-      <button type="submit">Sign In</button>
-      <nuxt-link :to="{ name: 'about' }">About</nuxt-link>
+      <button type="submit">Sign In</button> <NuxtLink to="about">about</NuxtLink>
+      <p>turnstile object - {{ $turnstile }}<p>
+      <p>status - {{ status }}</p>
     </form>
   </section>
 </template>
@@ -34,6 +36,7 @@ export default {
   data: () => ({
     email: 'test@example.com',
     password: '123',
+    status: false
   }),
 
   methods: {
@@ -43,7 +46,7 @@ export default {
 
     async onSubmit() {
       try {
-        const token = await this.$recaptcha.getResponse()
+        const token = await this.$turnstile.getResponse()
 
         const response = await fetch('/api/check-token', {
           method: 'POST',
@@ -56,7 +59,7 @@ export default {
 
         console.log('Server Response: ', response)
 
-        await this.$recaptcha.reset()
+        this.$turnstile.reset()
       } catch (error) {
         console.log('Login error:', error)
       }
@@ -64,10 +67,12 @@ export default {
 
     onSuccess (token) {
       console.log('Succeeded:', token)
+      this.status = true;
     },
 
     onExpired () {
       console.log('Expired')
+      this.status = false;
     }
   },
 }

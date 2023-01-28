@@ -1,18 +1,21 @@
 {
-  "name": "@nuxtjs/recaptcha",
-  "version": "1.1.1",
-  "description": "Simple and easy Google reCAPTCHA integration with Nuxt.js",
+  "name": "@artur9010/turnstile",
+  "version": "1.2.1",
+  "description": "Simple and easy Cloudflare Turnstile integration with Nuxt.js",
   "keywords": [
     "nuxtjs",
     "nuxt",
-    "recaptcha",
+    "turnstile",
     "captcha",
-    "grecaptcha"
+    "cloudflare"
   ],
   "license": "MIT",
   "contributors": [
     {
       "name": "mvrlin <mvrlin@pm.me>"
+    },
+    {
+      "name": "Artur Motyka <artur@motyka.pro>"
     }
   ],
   "main": "lib/module.js",
@@ -23,15 +26,10 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "nuxt example/base/both",
-    "dev:v3": "nuxt example/base/v3",
-    "dev:v2": "nuxt example/base/v2",
-    "dev:enterprise": "nuxt example/enterprise/both",
-    "dev:enterprise:v3": "nuxt example/enterprise/v3",
-    "dev:enterprise:v2": "nuxt example/enterprise/v2",
+    "dev": "nuxt example/base/v2",
     "lint": "eslint lib test",
     "test": "yarn lint && jest",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "npm publish"
   },
   "files": [
     "lib",
@@ -59,7 +57,6 @@
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "ohmyfetch": "latest",
     "request": "latest",
     "request-promise-native": "latest",
     "standard-version": "latest"

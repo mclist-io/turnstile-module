@@ -2,24 +2,9 @@ import Vue from 'vue'
 
 export interface ReCaptchaOptions {
   /**
-   * Toggles badge element visibility (v3)
-   */
-  hideBadge?: boolean
-
-  /**
-   * ReCaptcha mode.
-   */
-  mode?: 'base' | 'enterprise'
-
-  /**
    * Site key to send requests
    */
   siteKey: string
-
-  /**
-   * Version
-   */
-  version: number
 }
 
 export interface ReCaptchaInstance {
@@ -62,6 +47,6 @@ export interface ReCaptchaInstance {
 
 declare module 'vue/types/vue' {
   interface Vue {
-    $recaptcha: ReCaptchaInstance
+    $turnstile: ReCaptchaInstance
   }
 }

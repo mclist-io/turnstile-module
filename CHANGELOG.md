@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# 1.2.0 (2023-01-27)
+
+
+### Bug Fixes
+
+* check enterprise mode instead of version ([4a8bc52](https://github.com/nuxt-community/recaptcha-module/commit/4a8bc52))
+* dataSize default overriding actual config ([#85](https://github.com/nuxt-community/recaptcha-module/issues/85)) ([a25daf7](https://github.com/nuxt-community/recaptcha-module/commit/a25daf7))
+* describe error within execute() ([#40](https://github.com/nuxt-community/recaptcha-module/issues/40)) ([769ae67](https://github.com/nuxt-community/recaptcha-module/commit/769ae67))
+* fix string template for old Nuxt versions ([6887d38](https://github.com/nuxt-community/recaptcha-module/commit/6887d38))
+* prioritized dynamic input vs config ([#82](https://github.com/nuxt-community/recaptcha-module/issues/82)) ([2d125a3](https://github.com/nuxt-community/recaptcha-module/commit/2d125a3))
+* recaptcha case in comment ([39f2b5b](https://github.com/nuxt-community/recaptcha-module/commit/39f2b5b))
+* remove badge on destroy ([#76](https://github.com/nuxt-community/recaptcha-module/issues/76)) ([c419df1](https://github.com/nuxt-community/recaptcha-module/commit/c419df1))
+* reset for multi-widget ([#78](https://github.com/nuxt-community/recaptcha-module/issues/78)) ([4ff519b](https://github.com/nuxt-community/recaptcha-module/commit/4ff519b))
+* use built-in events instead of Vue ([53cbe1e](https://github.com/nuxt-community/recaptcha-module/commit/53cbe1e))
+* use module language in V3 ([#80](https://github.com/nuxt-community/recaptcha-module/issues/80)) ([3812045](https://github.com/nuxt-community/recaptcha-module/commit/3812045))
+* **lib:** convert string to template literal ([18e653a](https://github.com/nuxt-community/recaptcha-module/commit/18e653a))
+* **lib:** fix error is not defined ([f581488](https://github.com/nuxt-community/recaptcha-module/commit/f581488))
+* **lib:** remove code repetition ([1e15cd0](https://github.com/nuxt-community/recaptcha-module/commit/1e15cd0))
+* **lib:** return Promise instead of Boolean ([cdfe204](https://github.com/nuxt-community/recaptcha-module/commit/cdfe204))
+* **lib:** throw Error instead of String ([09450fa](https://github.com/nuxt-community/recaptcha-module/commit/09450fa))
+* **types:** fix execute Promise type ([a9833f3](https://github.com/nuxt-community/recaptcha-module/commit/a9833f3))
+* use this ([101f97d](https://github.com/nuxt-community/recaptcha-module/commit/101f97d))
+* wait for ready ([5662681](https://github.com/nuxt-community/recaptcha-module/commit/5662681))
+
+
+### Features
+
+* add enterprise mode ([17a7d5f](https://github.com/nuxt-community/recaptcha-module/commit/17a7d5f))
+* runtime config ([#70](https://github.com/nuxt-community/recaptcha-module/issues/70)) ([e090317](https://github.com/nuxt-community/recaptcha-module/commit/e090317))
+* **example:** split example by versions ([7ae76fe](https://github.com/nuxt-community/recaptcha-module/commit/7ae76fe))
+* **example, lib:** add recaptcha component ([fc69668](https://github.com/nuxt-community/recaptcha-module/commit/fc69668))
+* **language:** enable google auto detection ([#72](https://github.com/nuxt-community/recaptcha-module/issues/72)) ([3cb13fc](https://github.com/nuxt-community/recaptcha-module/commit/3cb13fc))
+* **lib:** add v2 support ([07e8b62](https://github.com/nuxt-community/recaptcha-module/commit/07e8b62))
+* **multi-widget:** render and verify multiple v2 widgets ([#75](https://github.com/nuxt-community/recaptcha-module/issues/75)) ([d3e3908](https://github.com/nuxt-community/recaptcha-module/commit/d3e3908))
+* **pages:** add v2 example ([ee4cadc](https://github.com/nuxt-community/recaptcha-module/commit/ee4cadc))
+* **plugin:** add execute helpers ([7a72172](https://github.com/nuxt-community/recaptcha-module/commit/7a72172))
+* **types:** add v2 types ([31e05c7](https://github.com/nuxt-community/recaptcha-module/commit/31e05c7))
+* **v2:** add language support ([195773e](https://github.com/nuxt-community/recaptcha-module/commit/195773e))
+* **v2:** add reset ([129e159](https://github.com/nuxt-community/recaptcha-module/commit/129e159))
+* **v2:** use callbacks, add expired event ([6b658b1](https://github.com/nuxt-community/recaptcha-module/commit/6b658b1))
+* add v2 event-bus ([366d4de](https://github.com/nuxt-community/recaptcha-module/commit/366d4de))
+* allow chaining __ready ([cb10c20](https://github.com/nuxt-community/recaptcha-module/commit/cb10c20))
+* lazy initialize $recaptcha on execute ([1e2e482](https://github.com/nuxt-community/recaptcha-module/commit/1e2e482))
+* reinitialize recaptcha v2 on re-visit ([701343a](https://github.com/nuxt-community/recaptcha-module/commit/701343a))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/nuxt-community/recaptcha-module/compare/v1.1.0...v1.1.1) (2022-05-24)
 
